@@ -1,0 +1,22 @@
+#timeline {
+	margin: auto;
+	max-width: 90vw;
+}
+
+#timeline-events li div {
+	width: 70vw;
+	padding: 1rem;
+	background-color: var(--main-color);
+	color: #fff;
+	border-radius: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+#timeline li div::before {
+	content: '';
+	position: absolute;
+	bottom: 12%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}

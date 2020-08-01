@@ -1,0 +1,42 @@
+#timeline {
+	margin: auto;
+	max-width: 90vw;
+}
+
+#timeline-events li div {
+	width: 75vw;
+	padding: 1rem;
+	background-color: var(--main-color);
+	color: #fff;
+	border-radius: 20px;
+	transition: all 0.5s ease-in-out;
+}
+
+#timeline-events li:nth-child(2n + 0) div {
+	margin-left: var(--margin-left-1);
+}
+
+#timeline li:nth-child(2n + 0) div::before {
+	left: 35px;
+	border-width: 16px 32px 16px 0;
+	border-color: transparent var(--main-color) transparent transparent;
+	transform: rotate(-45deg);
+}
+
+#timeline-events li {
+	align-self: flex-start;
+}
+
+#timeline li div::before {
+	content: '';
+	position: absolute;
+	bottom: 13%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#timeline-events li:nth-child(2n + 0) div {
+	border-bottom-right-radius: 20px;
+	transform: translateX(300px);
+}

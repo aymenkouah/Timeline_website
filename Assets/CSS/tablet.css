@@ -1,0 +1,32 @@
+#timeline-events li div {
+	width: 350px;
+	transition: all 0.5s ease-in-out;
+}
+
+#timeline-events li:nth-child(2n + 0) div {
+	margin-left: -400px;
+	border-bottom-right-radius: 0px;
+}
+
+#timeline li div::before {
+	content: '';
+	position: absolute;
+	bottom: 12%;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#timeline li:nth-child(2n + 1) div::before {
+	left: 35px;
+	border-width: 16px 32px 16px 0;
+	border-color: transparent var(--main-color) transparent transparent;
+	transform: rotate(-45deg);
+}
+
+#timeline li:nth-child(2n + 0) div::before {
+	left: -66px;
+	border-width: 32px 16px 0 16px;
+	border-color: var(--main-color)transparent transparent transparent;
+	transform: rotate(-45deg);
+}
