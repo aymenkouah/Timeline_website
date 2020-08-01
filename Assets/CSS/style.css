@@ -165,7 +165,7 @@ ul {
 }
 
 #timeline li:nth-child(1) div::before {
-	top: -20px;
+	bottom: 5px;
 	left: 35px;
 	border-width: 16px 32px 16px 0;
 	border-color: transparent var(--main-color) transparent transparent;
