@@ -164,6 +164,15 @@ ul {
 	transition: all 1s ease-in-out;
 }
 
+#timeline li:nth-child(1) div::before {
+	top: -20px;
+	left: 35px;
+	border-width: 16px 32px 16px 0;
+	border-color: transparent var(--main-color) transparent transparent;
+	transform: rotate(-45deg);
+	transition: all 1s ease-in-out;
+}
+
 #timeline ul li.show div {
 	transform: none;
 	visibility: visible;
