@@ -164,13 +164,10 @@ ul {
 	transition: all 1s ease-in-out;
 }
 
-#timeline li:nth-child(1) div::before {
-	left: 35px;
-	border-width: 16px 32px 16px 0;
-	border-color: transparent var(--main-color) transparent transparent;
-	transform: rotate(-45deg);
-	transform: translate(0, -5px);
-	transition: all 1s ease-in-out;
+#timeline ul li:nth-child(1):after {
+	content: '';
+	bottom: 8%;
+
 }
 
 #timeline ul li.show div {
